@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(11, 57, 100), rgb(24, 141, 116));
+    color: white;
+}
+
+.header {
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.location-timezone {
+    padding: 5px 10px;
+}
+
+.location-timezone:hover, .header:hover, .degree-section:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+.location,
+.temperature {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.temperature {
+    flex-direction: column;
+    text-align: center;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px 10px 5px 20px;
+}
+
+.degree-section span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree-section h2 {
+    font-size: 40px;
+}
+
+img {
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(5, 40, 73));
+    filter: drop-shadow(5px 5px 5px rgb(6, 40, 80));
+}
+
+img[src=''] {
+  display: none;
+}
+
+.wind-data {
+    text-align: center;
+    
+}
+
+li {
+    list-style-type: none;
+}
